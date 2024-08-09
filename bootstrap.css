@@ -1,0 +1,530 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(24, 26, 36, 0.7), rgba(4, 9, 30, 0.7)), url('back.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.transparent-box {
+    padding: 20px; /* Adjust the padding size as needed */
+    background-color: rgba(27, 27, 27, 0.726); /* Transparent gray background color */
+    
+    box-sizing: border-box; /* Ensures padding is included in the width and height */
+    height: 1000px;
+    width: 100%;
+    max-width: 1800px;
+    margin-left: 90px;
+    margin-top: 50px;
+    margin-right: 90px;
+    margin-bottom: 50px;
+
+}
+.left-align {
+    text-align: left;
+    padding-left: 3rem; 
+  }
+  .custom-top-padding {
+    padding-top: 1rem; 
+  }
+  .no-margin-padding {
+    margin-top: -3rem;
+    padding-top: -2rem;
+  }
+  .underline {
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.5s ease; /* Transition for text color and zoom effect */
+  }
+  
+  .underline:hover {
+    transform: scale(1.1); /* Zoom effect */
+  }
+  
+  .underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(231, 217, 11);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease; /* Smooth transition for underline */
+  }
+  
+  .underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .text-yellow {
+    color: yellow;
+}
+  .small-image {
+    width: 425px; /* Adjust the width as needed */
+    height: 550px; /* Maintains the aspect ratio */
+    margin-top: 3rem;
+    margin-left: 7rem;
+    
+  }
+  .inner-image {
+    position: absolute;
+    top: 0;
+    left: 13%; /* Adjust the left position of the inner image */
+    transform: translate(-10%, -10%);
+    max-width: 400px; /* Adjust the width of the inner image */
+    height: 470px; /* Maintains the aspect ratio */
+    z-index: 1; /* Ensures the inner image is above the outer image */
+    margin-top: 7rem;
+    margin-left: -1rem;
+    
+    
+  }
+
+  .custom-box {
+    padding: 25px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 750px;
+    height: 500px;
+    overflow: hidden; /* Ensures content does not overflow outside the box */
+    
+    margin-top: 4rem;
+    
+  }
+  .outer-container {
+    margin-left: 650px;
+  }
+  
+
+  .second body {
+    margin: 0;
+    padding: 0;
+    background: #262626;
+  }
+  
+  .second ul {
+    margin: 240px;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .second ul li {
+    list-style: none;
+    margin: 0 15px;
+  }
+  
+  .second ul li a {
+    position: relative; 
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 63px;
+    background: #333;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #666;
+    transition: .5s;
+    
+  }
+  .social2{
+    padding-left: 9rem;
+  }
+  .second ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #ffee10;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+  }
+  
+  .second ul li a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffee10;
+  }
+  
+  .second ul li a:hover {
+    color: #ffee10;
+    box-shadow: 0 0 5px #ffee10;
+    text-shadow: 0 0 5px #ffee10;
+  }
+.container3{
+  margin-top: 142px;
+  margin-left: -20px;
+  margin-right: -20px;
+  
+}
+.bg-dark{
+  height: 70px;
+  padding-right: 900px;
+  padding-top: 5px;
+  
+}
+.container{
+  margin-left: 1000px;
+}
+.btn-outline-light.btn-floating:hover {
+  background-color: yellow !important; /* Change to yellow on hover */
+  color: #050505 !important; /* Adjust text color on hover if needed */
+  box-shadow: 0 0 15px #ffee10;
+}
+
+/* Projects*/
+.projects{
+  margin-top: 50px;
+}
+.projects h2{
+  color: white;
+}
+.custom-search-bar {
+  width: 500px; /* Adjust width as needed */
+  margin: 0 auto; /* Center the search bar horizontally */
+  margin-top: 50px;
+  height: 50px;
+}
+.transparent-box6{
+  padding: 20px; /* Adjust the padding size as needed */
+  background-color: rgba(27, 27, 27, 0.726); /* Transparent gray background color */  
+  box-sizing: border-box; /* Ensures padding is included in the width and height */
+  height: 1800px;
+  width: 103%;
+  max-width: 1800px;
+  margin-left: 90px;
+  margin-top: 50px;
+  margin-right: 90px;
+  margin-bottom: 50px;
+}
+
+.container9{
+  margin-top: 1000px;
+  margin-left: -22px;
+  margin-right: -22px;
+}
+
+.container8{
+  margin-left: 50px;
+  margin-top: 60px;
+  height: 100px;
+  
+}
+.card{
+  width: 430px;
+  height: 380px;
+}
+.card-title{
+  height: 5px;
+}
+.card-img-top{
+  margin: 20px;
+  padding-right: 37px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  
+}
+
+  
+
+.modal-dialog{ 
+
+  justify-content: center; /* Center the card horizontally */
+  align-items: center; /* Center the card vertically */
+}
+.card2 {
+  width: 800px;
+  margin-right: 200px;
+  margin-top: 150px;
+}
+.modal-content {
+  width: 100%;
+  height: 600px;
+  margin-left: -150px;
+}
+.modal-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.modal-title {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+.modal-description {
+  text-align: center;
+  margin-top: 30px; /* Push the description to the bottom */
+
+  .content {
+    padding-top: -50px; /* Adjust the value as needed */
+    margin-top: -40px;
+}
+.date{
+  margin-top: -15px;
+}
+
+
+
+  
+}
+.modal-body img {
+  border: 2px solid #0f0f0f; /* Add border around the image */
+  border-radius: 5px; /* Optional: Add border radius */
+  max-width: 100%; /* Ensure image fits within modal */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 10px;
+ 
+}
+.card-body{
+  margin-left: -300px;
+  margin-top: -30px;
+}
+.custom-hr {
+  border: 0;
+  border-top: 1px solid #817777; /* Change the color and thickness */
+  width: 62.5%; /* Adjust the width */
+  margin: 10px auto; /* Center align with margin */
+  margin-left: 279px;
+  margin-top: 15px;
+}
+.custom-date {
+  display: flex;
+  align-items: center;
+  margin-top: -40px; /* Adjust top margin as needed */
+  margin-left: 300px; /* Adjust left margin as needed */
+  font-size: 10px; /* Adjust font size as needed */
+
+}
+
+.custom-btn7 {
+  width: 550px; /* Adjust the width as needed */
+  height: 27px; /* Adjust the height as needed */
+  font-size: 12px; /* Adjust the font size if needed */
+  margin-left: -60px;
+  margin-top: 28px;
+  
+}
+.text6{
+  margin-top: -5px;
+}
+.custom-icon5 {
+  margin-right: 5px; /* Adjust the value as needed */
+}
+.cardboody{
+  margin-left: -300px;
+  margin-top: -30px;
+}
+/* about*/
+.outer-container2{
+  margin-left: 300px;
+}
+
+.custom-box2{
+    padding: 25px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+    height: 630px;
+    overflow: hidden; /* Ensures content does not overflow outside the box */
+    
+    margin-top: 1rem;
+}
+
+.transparent-box3 {
+  padding: 20px; /* Adjust the padding size as needed */
+  background-color: rgba(27, 27, 27, 0.726); /* Transparent gray background color */  
+  box-sizing: border-box; /* Ensures padding is included in the width and height */
+  height: 1300px;
+  width: 103%;
+  max-width: 1800px;
+  margin-left: 90px;
+  margin-top: 50px;
+  margin-right: 90px;
+  margin-bottom: 50px;
+}
+
+.container4{
+  margin-top: 50px;
+  margin-left: -22px;
+  margin-right: -22px;
+  
+}
+ .word{
+  margin-left: 300px;
+ }
+ .transparent-box4 {
+  background-color: rgba(255, 255, 255, 0.5); /* White with 50% opacity */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Light border with 10% opacity */
+  padding: 20px;
+  border-radius: 5px;
+  height: 300px;
+  width: 1000px;
+  margin-left: 100px;
+}
+ .border{
+  width: 100px;
+  height: 100px;
+ }
+ .logo-box {
+  position: relative;
+  width: 80px; /* Box width */
+  height: 80px; /* Box height */
+  background-color: rgb(255, 250, 250); /* Bootstrap's .bg-light color */
+  border-radius: 0.4rem; /* Slightly rounded corners */
+  text-align: center;
+  margin: 10px; /* Margin between boxes */
+  overflow: hidden; /* Ensures content doesn't overflow on zoom */
+  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+  display: inline-block; /* Ensures boxes are displayed horizontally */
+}
+.logo-box:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+.logo-box img {
+  position: absolute;
+  top: 2px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(255, 254, 254); /* Matching background color */
+  padding: 5px;
+  width: 75px; /* Adjust the logo size as needed */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+.container {
+  text-align: center; /* Center aligns boxes horizontally */
+}
+
+/* CONTACT*/
+
+.transparent-box5{
+  padding: 20px; /* Adjust the padding size as needed */
+  background-color: rgba(27, 27, 27, 0.726); /* Transparent gray background color */  
+  box-sizing: border-box; /* Ensures padding is included in the width and height */
+  height: 900px;
+  width: 103%;
+  max-width: 1800px;
+  margin-left: 90px;
+  margin-top: 50px;
+  margin-right: 90px;
+  margin-bottom: 50px;
+}
+.outer-container3{
+  margin-left: 300px;
+}
+.container5{
+  margin-top: 180px;
+  margin-left: -22px;
+  margin-right: -22px;
+  
+}
+.container7 {
+  max-width: 600px;
+  margin-top: 50px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 180px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #050505;
+}
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.form-group label {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 16px;
+  color: #aaa;
+  background: #fff;
+  padding: 0 5px;
+  transition: 0.3s;
+}
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:focus + label,
+.form-group textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: #703b3b;
+}
+.form-control:focus {
+  border-color: #c7f10b;
+}
+.btn-primary {
+  background-color: #d2f703;
+  border-color: #d2f703;
+  border-radius: 5px;
+}
+.btn-primary:hover {
+  background-color: #d2f703;
+  border-color: #dae90a;
+}
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+.social-icons a {
+  font-size: 2em;
+  margin: 0 10px;
+  color: #333;
+  transition: color 0.3s;
+}
+.social-icons a:hover {
+  color: #e9e50c;
+}
+.funny2{
+  margin-top: 50px;
+  text-align: center;
+  margin-right: 200px;
+}
+.funny2 h2 {
+  color: white;
+}
